@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Wintel - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00b804c05e.js" crossorigin="anonymous"></script>    
+    <style>
+        .icon-40x40 {
+            font-size: 30px;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+        }
+        .fa-brands + .fa-solid {
+            color: rgb(59, 91, 152);
+            width: 40px;
+            height: 40px;
+        }
+        .header-background {
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, white), url("/Bilder/sky.png");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding-bottom: 5rem;
+
+        }
+        #contact-form input, #contact-form textarea {
+             margin: 0 10px;
+        }
+
+        .header-background h1, .header-background p {
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 085);
+        }
+        #portfolio {
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, white), url("/Bilder/san.png");
+            background-size: cover;
+            background-position: center;
+            color: rgb(0, 0, 0);
+            padding-bottom: 5rem;
+        }
+
+        .portfolio-entry:nth-child(1):hover { background-color: red; }
+        .portfolio-entry:nth-child(2):hover { background-color: blue; }
+        .portfolio-entry:nth-child(3):hover { background-color: yellow; }
+        .portfolio-entry:nth-child(4):hover { background-color: green; }
+        .portfolio-entry:nth-child(5):hover { background-color: orange; }
+        .portfolio-entry:nth-child(6):hover { background-color: purple; }
+    </style></head>
+<body class="flex flex-col min-h-screen">
+    <div id="top"></div>
+    <!-- Navbar -->
+<nav class="bg-gray-800 text-white p-4 sticky top-0">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="font-bold flex justify-center items-center">
+            <a href="#top" class="font-bold flex justify-center items-center hover:text-blue-550">
+            <img src="/Bilder/Logo.png" alt="Logo" class="mr-2" style="width: 50px; height: 50px;">Lucas Wintel</a>
+        </div>
+        <div class="flex">
+            <a href="#about" class="px-2 md:px-4 hover:text-blue-500">Über Mich</a>
+            <a href="#portfolio" class="px-2 md:px-4 hover:text-blue-500">Portfolio</a>
+            <a href="#contact" class="px-2 md:px-4 hover:text-blue-500">Kontakt</a>
+        </div></div></nav>
+        <header class="text-center py-16 header-background">
+        <h1 class="text-5xl py-10 font-bold">Hallo, ich bin Lucas Wintel</h1>
+        <p class="text-2xl">Ausgebildeter Chemikant & angehender Entwickler</p></header>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto my-10 flex flex-col md:flex-row">
+        <div class="md:w-1/3 flex justify-center items-center md:justify-start md:items-start md:pr-4">
+            <img src="/Bilder/gpt.png" alt="Bild von Lucas Wintel" class="w-full h-auto rounded-lg"></div>
+        <div class="md:w-2/3 mt-4 md:mt-0">
+            <h2 class="text-4xl mb-8 font-bold text-center md:text-left">Ein wenig über Mich</h2>
+            <p class="text-center md:text-left">Hallo, ich bin Lucas Wintel, ein leidenschaftlicher und erfahrener Softwareentwickler und Data Scientist mit einem tiefen Interesse an der Automatisierung und Optimierung von Prozessen durch innovative Technologielösungen. Mit einem Bachelor-Abschluss in Informatik und über fünf Jahren Berufserfahrung in verschiedenen IT-Branchen bringe ich ein breites Spektrum an Fähigkeiten und Kenntnissen mit, die ich in zahlreichen erfolgreichen Projekten unter Beweis gestellt habe.
+
+                Meine Reise in die Welt der Programmierung begann bereits in meiner Jugend, als ich meine erste Website erstellte und mich sofort in das kreative Potenzial der Technologie verliebte. Diese frühe Begeisterung führte mich zu einem Studium der Informatik, wo ich meine Fähigkeiten in Softwareentwicklung, Datenanalyse und maschinellem Lernen vertiefte. Besonders faszinierte mich die Möglichkeit, komplexe Probleme mit eleganten Code-Lösungen zu bewältigen.
+                                
+                Eines meiner Kerngebiete ist das Webscraping – eine Technik, die ich zur Datensammlung und -analyse für Marktforschung und Business-Intelligence-Zwecke einsetze. Ich habe auch Projekte im Bereich der Automatisierung geleitet, um repetitive Aufgaben zu vereinfachen und die Effizienz in Unternehmen zu steigern. Mein Interesse an Data Science hat mich dazu inspiriert, komplexe Datenstrukturen zu analysieren und wertvolle Erkenntnisse aus großen Datenmengen zu gewinnen, um geschäftliche Entscheidungen zu unterstützen.
+                
+                Neben meiner beruflichen Tätigkeit engagiere ich mich in der Tech-Community. Ich teile mein Wissen gerne durch Blogbeiträge, Workshops und Vorträge. Diese Interaktion mit Gleichgesinnten und das ständige Lernen von anderen sind für mich essentielle Bestandteile meiner beruflichen Entwicklung.
+                
+                In meiner Freizeit genieße ich es, neue Technologien und Programmiersprachen zu erkunden. Ich bin auch ein begeisterter Open-Source-Unterstützer und glaube fest an die Kraft der Gemeinschaft, um die Softwareentwicklung voranzubringen.
+        </div></section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container mx-auto my-10">
+        <h2 class="text-4xl mb-8 font-bold text-center">Portfolio</h2>
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-8 mt-4">
+            <div class="border text-center p-4 portfolio-entry">
+                <h3 class="font-bold text-xl">Webscraping</h3>
+                <p>Das erstellen verschiedener Webscraper und besorgen verschiedenster Datensätze.</p></div>
+            <div class="border text-center p-4 portfolio-entry">
+                <h3 class="font-bold text-xl">Datenbanken</h3>
+                <p>Das erstellen von MySQL Datenbanken und das einpflegen von Scraping-Ergebnissen.</p></div>
+            <div class="border text-center p-4 portfolio-entry"> 
+                <h3 class="font-bold text-xl">Automatisierung</h3>
+                <p>Das erstellen verschiedener Scripts um Aufgaben zu automatisieren und zu erleichtern.</p></div>
+            <div class="border text-center p-4 portfolio-entry">
+                <h3 class="font-bold text-xl">Datenaufbereitung</h3>
+                <p>Professionel arbeiten wir sämtliche Daten auf! Filtern, reduzieren und das vorbereiten von zahlreichen Verarbeitungsschritten.</p></div>
+            <div class="border text-center p-4 portfolio-entry">
+                <h3 class="font-bold text-xl">Promptwrigthing</h3>
+                <p>Damit ist jede Ki unser bester Freund und wird ihr möglichstes für uns tun.</p></div>
+            <div class="border text-center p-4 portfolio-entry">
+                <h3 class="font-bold text-xl">Datenauswertung</h3>
+                <p>Das erstellen von Grafiken und Listen die genauer Aufschluss über den Wert der Daten geben.</p>
+            </div></div></section>
+
+    <!-- Kontaktbereich -->
+    <section id="contact" class="container mx-auto my-10">
+        <h2 class="text-4xl mb-8 font-bold text-center">Kontaktiere Mich</h2>
+        <div class="text-center flex mb-8 justify-center items-center flex-wrap">
+            <a href="https://www.linkedin.com/in/lucas-wintel-35712a262/" target="_blank" class="mx-1 md:mx-4""><i class="fa-brands fa-linkedin icon-40x40"></i></a>
+            <a href="mailto:Lakiri.lw@gmail.com" target="_blank" class="mx-1 md:mx-4""><i class="fa-brands fa-google icon-40x40"></i></a>
+            <a href="https://github.com/LAleLU1234" target="_blank" class="mx-1 md:mx-4""><i class="fa-brands fa-github icon-40x40"></i></a>
+            <a href="https://discord.gg/CV4dBWfder" target="_blank" class="mx-1 md:mx-4""><i class="fa-brands fa-discord icon-40x40"></i></a>
+            <a href="https://www.freelancer.com/u/Luucas222" target="_blank" class="mx-1 md:mx-4""><i class="fa-solid fa-briefcase icon-40x40"></i></a>
+            <a href="https://www.pinterest.de/" target="_blank" class="mx-1 md:mx-4""><i class="fa-brands fa-pinterest icon-40x40"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" class="mx-1 md:mx-4""><i class="fa-brands fa-facebook icon-40x40"></i></a></div>
+            <form id="contact-form" action="https://formspree.io/f/xleqgeeb" method="POST" class="mt-4 flex flex-col items-center space-y-2">
+            <input type="text" name="name" placeholder="Ihr Name" class="w-full max-w-md border border-gray-500 p-2" required>
+            <input type="email" name="_replyto" placeholder="Ihre E-Mail" class="mb-2 w-full max-w-md border border-gray-500 p-2" required>
+            <textarea name="message" placeholder="Ihre Nachricht" class="mb-2 w-full max-w-md border border-gray-500 p-2" style="height: 220px;" required></textarea>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2">Senden</button>
+        </form></section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-auto">
+        <p>Stolz präsentiert von Lucas Wintel</p>
+        <p>© 2024 Alle Rechte vorbehalten</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
