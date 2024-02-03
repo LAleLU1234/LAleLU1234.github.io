@@ -1,58 +1,15 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio von Lucas Wintel, Softwareentwickler und Data Scientist">
+    <meta name="keywords" content="Lucas Wintel, Portfolio, Softwareentwicklung, Data Science">
     <title>Lucas Wintel - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/00b804c05e.js" crossorigin="anonymous"></script>    
-    <style>
-        .icon-40x40 {
-            font-size: 30px;
-            width: 40px;
-            height: 40px;
-            display: inline-block;}
-        .fa-brands + .fa-solid {
-            color: rgb(59, 91, 152);
-            width: 40px;
-            height: 40px;}
-        .header-background {
-            background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, white), url("/Bilder/sky.png");
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 11% 0;}
-        #about {
-            padding-top: -50px;}
-        #contact-form input, #contact-form textarea {
-            margin: 0.6rem 1rem;}
-        .header-background h1, .header-background p {
-            text-shadow: 3px 3px 4px rgba(0, 0, 0, 085);}
-        #portfolio {
-            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 60%, white), url("/Bilder/san.png");
-            background-size: cover;
-            background-position: bottom;
-            color: rgb(0, 0, 0);
-            padding-bottom: 5rem;
-            margin: 0px 5px;
-            padding-top: 50px;}
-        .portfolio-entry:nth-child(odd) { margin-left: 6%; }
-        .portfolio-entry:nth-child(even) { margin-right: 6%; }
-        .portfolio-entry:nth-child(odd):hover { background-color: orangered; }
-        .portfolio-entry:nth-child(even):hover { background-color: greenyellow; }
-        .absolute-right {
-            position: absolute;
-            right: 5px;}
-        #contact {
-            width: 100%;
-            background: linear-gradient(to top, rgba(235, 235, 235, 0) 0%, rgba(235, 235, 235, 0.57) 40%, white), url("/Bilder/woods.png");
-            background-size: cover;
-            padding: 2rem 0;
-            margin-top: 2rem;}
-        footer {
-            border-top: 5px solid #C0C0C0;}
-
-    </style></head>
+    </head>
 <body class="flex flex-col min-h-screen">
     <div id="top"></div>
     <!-- Navbar -->
@@ -60,17 +17,17 @@
     <div class="container flex justify-between items-center">
         <div class="font-bold flex justify-center items-center">
             <a href="#top" class="font-bold flex justify-center items-center hover:text-blue-550">
-            <img src="/Bilder/Logo.png" alt="Logo" class="mr-2" style="width: 50px; height: 50px;">Lucas Wintel</a></div>
+                <img src="/Bilder/Logo.png" alt="Logo von Lucas Wintel" class="mr-2" style="width: 50px; height: 50px;">Lucas Wintel</a></div>
         <div class="flex absolute-right">
             <a href="#about" class="px-2 md:px-4 hover:text-blue-500">Über Mich</a>
             <a href="#portfolio" class="px-2 md:px-4 hover:text-blue-500">Portfolio</a>
             <a href="#contact" class="px-2 md:px-4 hover:text-blue-500">Kontakt</a>
         </div></div></nav>
         <header class="text-center header-background">
-        <h1 class="text-5xl py-10 font-bold">Hallo, ich bin Lucas Wintel</h1>
+        <h1 class="text-5xl py-11 font-bold">Hallo, ich bin Lucas Wintel</h1>
         <p class="text-2xl">Ausgebildeter Chemikant & angehender Entwickler</p></header>
     <!-- About Section -->
-    <section id="about" class="container mx-auto my-10 flex flex-col md:flex-row">
+    <section id="about" class="container mx-auto my-5 flex flex-col md:flex-row">
         <div class="md:w-1/3 flex justify-center items-center md:justify-start md:items-start md:pr-12">
             <img src="/Bilder/gpt.png" alt="Bild von Lucas Wintel" class="w-full h-auto rounded-lg"></div>
         <div class="md:w-2/3 mt-4 md:mt-0">
@@ -82,23 +39,23 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="my-10">
         <h2 class="text-4xl my-8 font-bold text-center">Portfolio</h2>
-        <div class="grid grid-cols-2 md:grid-cols-2 gap-8 my-8">
-            <div class="border text-center p-4 portfolio-entry">
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-6 my-6">
+            <div class="border text-center p-3 portfolio-entry">
                 <h3 class="font-bold text-xl">Webscraping</h3>
                 <p>Das erstellen verschiedener Webscraper und besorgen verschiedenster Datensätze.</p></div>
-            <div class="border text-center p-4 portfolio-entry">
+            <div class="border text-center p-3 portfolio-entry">
                 <h3 class="font-bold text-xl">Datenbanken</h3>
                 <p>Das erstellen von MySQL Datenbanken und das einpflegen von Scraping-Ergebnissen.</p></div>
-            <div class="border text-center p-4 portfolio-entry"> 
+            <div class="border text-center p-3 portfolio-entry"> 
                 <h3 class="font-bold text-xl">Automatisierung</h3>
                 <p>Das erstellen verschiedener Scripts um Aufgaben zu automatisieren und zu erleichtern.</p></div>
-            <div class="border text-center p-4 portfolio-entry">
+            <div class="border text-center p-3 portfolio-entry">
                 <h3 class="font-bold text-xl">Datenaufbereitung</h3>
                 <p>Professionel arbeiten wir sämtliche Daten auf! Filtern, reduzieren und das vorbereiten von zahlreichen Verarbeitungsschritten.</p></div>
-            <div class="border text-center p-4 portfolio-entry">
+            <div class="border text-center p-3 portfolio-entry">
                 <h3 class="font-bold text-xl">Promptwriting</h3>
                 <p>Damit ist jede Ki unser bester Freund und wird ihr möglichstes für uns tun.</p></div>
-            <div class="border text-center p-4 portfolio-entry">
+            <div class="border text-center p-3 portfolio-entry">
                 <h3 class="font-bold text-xl">Datenauswertung</h3>
                 <p>Das erstellen von Grafiken und Listen die genauer Aufschluss über den Wert der Daten geben.</p>
             </div></div></section>
@@ -116,7 +73,7 @@
             <form id="contact-form" action="https://formspree.io/f/xleqgeeb" method="POST" class="mt-4 flex flex-col items-center space-y-2">
             <input type="text" name="name" placeholder="Ihr Name" class="w-full max-w-md border border-gray-500 p-2" required>
             <input type="email" name="_replyto" placeholder="Ihre E-Mail" class="mb-2 w-full max-w-md border border-gray-500 p-2" required>
-            <textarea name="message" placeholder="Ihre Nachricht" class="mb-2 w-full max-w-md border border-gray-500 p-2" style="height: 220px;" required></textarea>
+            <textarea name="message" placeholder="Ihre Nachricht" class="mb-2 w-full max-w-md border border-gray-500 p-2" style="height: 150px;" required></textarea>
             <button type="submit" class="bg-blue-500 text-white px-4 py-2">Senden</button>
         </form></section>
     <!-- Footer -->
