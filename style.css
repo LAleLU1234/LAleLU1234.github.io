@@ -15,23 +15,21 @@
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 11% 0;
-}
-#about {
-    padding-top: -50px;
+    padding: 2vh 0;
+    height: 90%;
 }
 #contact-form input, #contact-form textarea {
     margin: 0.6rem 1rem;
 }
-.header-background h1, .header-background p {
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.85);
+.header-background h1, .header-background p, .header-background h4 {
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.80);
 }
 #portfolio {
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 60%, white), url("/Bilder/sand.png");
     background-size: cover;
     background-position: bottom;
     color: rgb(0, 0, 0);
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     margin: 0px 5px;
     padding-top: 20px;
 }
@@ -55,10 +53,9 @@
     width: 100%;
     background: linear-gradient(to top, rgba(235, 235, 235, 0) 0%, rgba(235, 235, 235, 0.57) 40%, white), url("/Bilder/woods.png");
     background-size: cover;
-    padding: 2rem 0;
+    padding: 1rem 0;
     margin-top: 2rem;
 }
 footer {
     border-top: 5px solid #C0C0C0;
 }
-
